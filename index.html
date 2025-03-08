@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 Марта!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #fbc2eb, #fad0c4, #ff9a9e);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        h1 {
+            color: #d6336c;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 
+                -1px -1px 0 #fff,  
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff; /* Белый контур для заголовка */
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #50C878; /* Изумрудный цвет */
+            text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; /* Чёрная обводка для текста */
+        }
+        .flowers {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flower {
+            width: 60px;
+            margin: 8px;
+            animation: float 4s ease-in-out infinite;
+        }
+        .flower:nth-child(1) { animation-delay: 0s; }
+        .flower:nth-child(2) { animation-delay: 1s; }
+        .flower:nth-child(3) { animation-delay: 2s; }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-15px) rotate(10deg);
+            }
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #d6336c;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #b02a57;
+        }
+
+        /* Медиа-запросы для адаптации под мобильные устройства */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em; /* Уменьшаем размер заголовка */
+            }
+            p {
+                font-size: 1em; /* Уменьшаем размер текста */
+            }
+            .flower {
+                width: 50px; /* Уменьшаем размер цветов */
+                margin: 5px;
+            }
+            .button {
+                padding: 10px 20px; /* Уменьшаем размер кнопки */
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.8em; /* Ещё меньше для очень маленьких экранов */
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .flower {
+                width: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>С 8 Марта!</h1>
+    <p>Дорогие девчонки, поздравляем вас с 8 Марта! Пусть ваш день будет наполнен радостью, улыбками и теплом. Спасибо за вашу невероятную красоту, заботу и добрату!💖</p>
+    
+    <div class="flowers">
+        <img class="flower" src="https://cdn-icons-png.flaticon.com/512/381/381804.png" alt="Цветок">
+        <img class="flower" src="https://cdn-icons-png.flaticon.com/512/381/381804.png" alt="Цветок">
+        <img class="flower" src="https://cdn-icons-png.flaticon.com/512/381/381804.png" alt="Цветок">
+    </div>
+
+</body>
+</html>
